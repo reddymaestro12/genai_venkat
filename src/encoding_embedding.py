@@ -1,0 +1,1 @@
+print("Encoding and embedding initialized.")
