@@ -1,0 +1,22 @@
+Pydantic is a Python library for data validation and parsing that turns type hints into runtime checks, ensuring your inputs are correct and safe
+usage :  most often used in
+ - APIs (FastAPI)
+ - configuration management, 
+ - anywhere structured data needs validation.
+
+What is Pydantic: A data validation library built on Python type hints.
+Core Idea: You define models with type annotations, and Pydantic automatically validates and converts incoming data.
+Why Use It: Python’s type hints are not enforced at runtime; Pydantic bridges that gap.
+
+Core Concepts
+Models: Classes inheriting from BaseModel that declare fields with type hints.
+
+Validation: Input data is validated and coerced into correct types when creating a model instance.
+
+Parsing & Serialization: Models can parse JSON and export back to JSON or dicts.
+
+Validators: Custom rules using @field_validator or @model_validator.
+
+Errors: Invalid data raises ValidationError with structured details.
+
+Performance: Pydantic v2 uses Rust under the hood, making it extremely fast.
