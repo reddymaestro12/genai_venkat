@@ -1,0 +1,15 @@
+Basic Questions:
+   - What is One‑Hot Encoding
+   - Why do we use One‑Hot Encoding instead of Label Encoding?
+   - Give a simple example of One‑Hot Encoding.  
+
+Intermediate Questions:
+   - What are the drawbacks of One‑Hot Encoding? 
+   - How does One‑Hot Encoding affect algorithms like Linear Regression vs. Decision Trees?  
+   - How do you handle unseen categories during inference with One‑Hot Encoding?  
+
+Advanced Questions:
+  - How would you implement One‑Hot Encoding in a modular ML pipeline?  
+  - What is the difference between One‑Hot Encoding and Embedding layers in deep learning?  
+  - How do you optimize One‑Hot Encoding for high‑cardinality features (e.g., ZIP codes)? 
+  - Can One‑Hot Encoding introduce multicollinearity? How do you avoid it?
