@@ -1,6 +1,25 @@
 Basic Questions:
    - What is One‑Hot Encoding
    - Why do we use One‑Hot Encoding instead of Label Encoding?
+     Suppose we have a feature "Color" with values:
+
+Red → 1
+
+Blue → 2
+
+Green → 3
+
+With Label Encoding, the model might interpret "Green" > "Blue" > "Red", which is meaningless for colors.
+
+With One‑Hot Encoding, each category becomes a separate binary column:
+
+Red → [1, 0, 0]
+
+Blue → [0, 1, 0]
+
+Green → [0, 0, 1]
+
+👉 This removes any false sense of order and ensures the model treats categories as distinct and unrelated.
    - Give a simple example of One‑Hot Encoding.  
 
 Intermediate Questions:
