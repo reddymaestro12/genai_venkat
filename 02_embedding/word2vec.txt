@@ -1,0 +1,24 @@
+What is Word2Vec?
+    - Word2Vec is a neural network–based model that learns dense vector representations (embeddings) of words.
+    - Unlike Bag of Words or TF‑IDF, which are sparse and frequency‑based, Word2Vec captures semantic meaning: words with similar contexts have similar vectors.
+
+Key Insight:
+    Word2Vec was the bridge between classical NLP (BoW, TF‑IDF) and modern contextual embeddings (BERT, GPT). It introduced the idea that words live in a semantic vector space.
+
+Applications: 
+    Semantic similarity → Find related words/documents.
+    Recommendation systems → Product embeddings.
+    Search engines → Improve query understanding.
+    Clustering & classification → Group similar texts.
+    Feature engineering → Input for downstream ML models.
+
+✅ Pros
+Captures semantic meaning and relationships.
+Dense, low‑dimensional vectors (efficient compared to sparse BoW/TF‑IDF).
+Enables vector arithmetic (king – man + woman ≈ queen).
+
+❌ Cons
+Requires large corpora to train well.
+Context window is fixed → struggles with polysemy (same word, different meanings).
+Static embeddings → one vector per word, regardless of context (unlike BERT or GPT).
+Outdated compared to modern contextual embeddings, but still useful for lightweight tasks.
