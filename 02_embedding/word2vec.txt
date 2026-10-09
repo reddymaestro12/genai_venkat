@@ -11,7 +11,21 @@ Applications:
     Search engines → Improve query understanding.
     Clustering & classification → Group similar texts.
     Feature engineering → Input for downstream ML models.
-
+Word2Vec architecture: 
+   - There are two main approaches:
+       - CBOW :Continuous Bag of Words - Predict the target word from surrounding words.
+                context
+            ┌──────┼──────┐
+            ↓      ↓      ↓
+            the    drinks  milk
+                   ↓
+                 [cat]
+       - Skip-Gram : Predict surrounding words from the target word.
+                  cat
+                   ↓
+            ┌──────┼──────┐
+            ↓      ↓      ↓
+            the   drinks   milk
 ✅ Pros
 Captures semantic meaning and relationships.
 Dense, low‑dimensional vectors (efficient compared to sparse BoW/TF‑IDF).
