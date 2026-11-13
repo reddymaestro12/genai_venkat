@@ -1,0 +1,25 @@
+ACP (Agent Context Protocol) is a protocol designed to standardize how AI agents exchange context, memory, state, tasks, and reasoning information during collaboration.
+
+Core Components of ACP: context,memory,state,intermediate results,metadata
+
+Think of it as:
+
+MCP (Model Context Protocol) → Agent ↔ Tools
+A2A (Agent2Agent) → Agent ↔ Agent
+ACP (Agent Context Protocol) → Shared Context Between Agents
+
+The main goal is to ensure that when one agent hands off work to another, the receiving agent gets the necessary context rather than starting from scratch.
+When to use ACP :
+   -  Multi agent RAG systems: each agent shares the context 
+   - long runnig workflow : ACP maiantains the shared workflow state
+   -  HITL
+   - hieararcial agentic systems
+
+Feature	ACP	A2A	MCP
+Main Goal	Share context	Agent communication	Tool access
+Communication	Context exchange	Agent ↔ Agent	Agent ↔ Tool
+Memory Transfer	✅	Partial	❌
+Task Delegation	❌	✅	❌
+Tool Invocation	❌	❌	✅
+Multi-Agent Workflows	✅	✅	Limited
+RAG Pipelines	✅	✅	✅
